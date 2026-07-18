@@ -1,0 +1,138 @@
+:root {
+  --color-primary: #4b1f6f;
+  --color-primary-dark: #331349;
+  --color-text: #222222;
+  --color-text-light: #ffffff;
+  --color-bg: #f7f5fa;
+
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Nunito Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+  position: relative;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
+
+nav {
+  display: none;
+  width: 100%;
+  order: 3;
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  display: block;
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  transition: background-color 0.25s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--color-primary-dark);
+}
+
+/* Main */
+main {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+main h1 {
+  font-family: var(--font-heading);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  grid-column: 1 / -1;
+}
+
+figure {
+  margin: 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+
+figcaption {
+  padding: 0.6rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+/* Footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}
+
+#lastModified {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}

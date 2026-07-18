@@ -1,0 +1,27 @@
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    width: auto;
+    order: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    border-top: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 4px;
+  }
+
+  main {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
