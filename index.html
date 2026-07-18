@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Emmanuel Adams</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals course landing page for Emmanuel Adams. Home page featuring an about me section, interests, and web development resources.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <div>
-        <h1>Welcome to My Website</h1>
-        <p>This is a simple home page.</p>
+
+  <header>
+    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <nav>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/emmanuel-adams25" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
+        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Emmanuel Adams</h1>
+
+    <div class="cards">
+      <section class="card">
+        <h2>About Me</h2>
+        <div class="card-content">
+          <div class="card-text">
+            <p>
+              My name is Emmanuel Adams, and I am a web developer with a passion for creating dynamic and user-friendly websites. I have experience in HTML, CSS, JavaScript, and various web development frameworks. In my free time, I enjoy exploring new technologies, contributing to open-source projects, and enhancing my skills through continuous learning.
+            </p>
+          </div>
+          <img src="images/potrait.jpg" alt="Portrait of Me" width="200" height="200">
+        </div>
+
+        <hr>
+
+        <h3>My Location</h3>
+        <div class="card-content" id="location">
+          <figure>
+            <img src="images/ghana-flag.webp" alt="Official flag of Ghana" width="150">
+            <figcaption>Official Flag of Ghana</figcaption>
+          </figure>
+          <p>
+            Ghana is a country located in West Africa, known for its rich history, diverse culture, and vibrant landscapes. It is bordered by Côte d'Ivoire to the west, Burkina Faso to the north, Togo to the east, and the Gulf of Guinea to the south. Ghana is renowned for its warm hospitality, colorful festivals, and significant contributions to music and art. The capital city is Accra, which serves as the political and economic hub of the country.
+          </p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <ul class="resource-list">
+          <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3 Schools</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+          <li><a href="https://picsum.photos/" target="_blank" rel="noopener">Lorem Picsum Image Placeholder</a></li>
+        </ul>
+      </section>
     </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+
 </body>
 </html>
