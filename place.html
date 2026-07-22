@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Ghana – Emmanuel Adams</title>
+  <meta name="description" content="A profile page about Ghana featuring key country data and current weather conditions, built by Emmanuel Adams for WDD 131 – Dynamic Web Fundamentals.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="stylesheet" href="styles/place-large.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Ghana</h1>
+  </header>
+
+  <main>
+    <div class="hero-wrap">
+      <picture class="hero">
+        <source srcset="images/ghana-hero-large.webp" media="(min-width: 700px)">
+        <img src="images/ghana-hero-small.webp" alt="Independence Arch at Black Star Square in Accra, Ghana, flanked by Ghanaian flags against a clear blue sky" width="640" height="640" loading="eager">
+      </picture>
+
+      <section class="data-card">
+        <h2>Data</h2>
+        <ul>
+          <li><span class="label">Area:</span> <span class="value">238,533 sq km</span></li>
+          <li><span class="label">Population:</span> <span class="value">34,121,985</span></li>
+          <li><span class="label">Capital:</span> <span class="value">Accra</span></li>
+          <li><span class="label">Languages:</span> <span class="value">English, Twi, Ga, Ewe</span></li>
+          <li><span class="label">Currency:</span> <span class="value">Ghanaian Cedi</span></li>
+          <li><span class="label">Time Zone:</span> <span class="value">UTC+0</span></li>
+          <li><span class="label">Calling Code:</span> <span class="value">+233</span></li>
+          <li><span class="label">Internet TLD:</span> <span class="value">.gh</span></li>
+        </ul>
+      </section>
+
+      <section class="weather-card">
+        <h2>Weather</h2>
+        <img class="weather-icon-mobile" src="images/weather-icon.svg" alt="Partly cloudy" width="40" height="40">
+        <ul>
+          <li><span class="label">Temperature:</span> <span class="value">10&deg;C</span></li>
+          <li><span class="label">Conditions:</span> <span class="value">Partly Cloudy</span></li>
+          <li><span class="label">Wind:</span> <span class="value">5 km/h</span></li>
+          <li><span class="label">Wind Chill:</span> <span class="value" id="windchill"></span></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

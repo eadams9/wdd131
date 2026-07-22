@@ -1,0 +1,37 @@
+@media screen and (min-width: 700px) {
+  header h1 {
+    font-size: 2.4rem;
+    padding: 1.75rem 1rem;
+  }
+
+  .hero-wrap {
+    position: relative;
+    padding: 1.5rem;
+  }
+
+  .data-card,
+  .weather-card {
+    position: absolute;
+    width: 240px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+
+  .data-card {
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  .weather-card {
+    bottom: 2.5rem;
+    right: 2.5rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather-card h2::after {
+    content: '⛅';
+    margin-left: 0.5rem;
+  }
+}
