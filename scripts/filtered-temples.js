@@ -65,24 +65,21 @@ const temples = [
     location: "Accra, Ghana",
     dedicated: "2004, January, 11",
     area: 17500,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/accra-ghana-temple/accra-ghana-temple-5139.jpg"
+    imageUrl: "images/accra-ghana-temple.webp"
   },
   {
     templeName: "Nauvoo Illinois",
     location: "Nauvoo, Illinois, United States",
     dedicated: "2002, June, 27",
     area: 54000,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/nauvoo-illinois-temple/nauvoo-illinois-temple-70559.jpg"
+    imageUrl: "images/nauvoo-illinois-temple.webp"
   },
   {
     templeName: "Rome Italy",
     location: "Rome, Italy",
     dedicated: "2019, March, 10",
     area: 41010,
-    imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-3556.jpg"
+    imageUrl: "images/rome-italy-temple.webp"
   }
 ];
 
