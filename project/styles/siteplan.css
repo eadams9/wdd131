@@ -1,5 +1,6 @@
 :root {
   --color-primary: #ce1126;
+  --color-primary-dark: #a10e1f;
   --color-gold: #fcd116;
   --color-green: #006b3f;
   --color-text: #222222;
@@ -37,7 +38,7 @@ code {
 
 /* Header */
 header {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-text-light);
   text-align: center;
   padding: 1.5rem 1rem;
@@ -138,11 +139,10 @@ section h2 {
 
 /* Footer */
 footer {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-dark);
   color: var(--color-text-light);
   text-align: center;
   padding: 1rem;
-  font-size: 1.5rem
 }
 
 footer p {
