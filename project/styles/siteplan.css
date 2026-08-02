@@ -104,6 +104,25 @@ section h2 {
 .swatch-list p {
   margin: 0.15rem 0 0;
 }
+.swatch1 {
+  background-color: var(--color-primary);
+}
+
+.swatch2{
+  background-color: var(--color-gold)
+}
+
+.swatch3{
+  background-color: var(--color-green);
+}
+
+.swatch4 {
+  background-color: var(--color-text);
+}
+
+.swatch5{
+  background-color: var(--color-bg);
+}
 
 /* Typography samples */
 .font-list {
