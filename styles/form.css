@@ -189,3 +189,14 @@ footer p {
 #lastModified {
   font-size: 0.85rem;
 }
+
+
+@media (min-width: 700px) {
+  main {
+    max-width: 640px;
+  }
+
+  form {
+    padding: 2rem;
+  }
+}
