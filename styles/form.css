@@ -80,6 +80,17 @@ label {
   font-size: 0.85em;
 }
 
+.required-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-primary-dark);
+}
+
+.required {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 select,
 input[type="date"],
 input[type="text"],
@@ -91,6 +102,11 @@ textarea {
   border-radius: 4px;
   background-color: var(--color-text-light);
   color: var(--color-text);
+}
+
+select:required,
+input[type="date"]:required {
+  border-left: 4px solid var(--color-primary);
 }
 
 textarea {
