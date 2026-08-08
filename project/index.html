@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Ghana – Home</title>
+  <meta name="description" content="Discover Ghana is a travel and culture guide introducing first-time visitors to Ghana's top destinations, traditional cuisine, and how to plan a visit.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+  <script src="scripts/nav.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="site-title">Discover Ghana</p>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="explore.html">Explore Ghana</a></li>
+        <li><a href="plan-visit.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero-layout">
+      <div class="intro">
+        <h1>Welcome to Ghana</h1>
+        <p>
+          Known as the "Gateway to Africa," Ghana is one of West Africa's most welcoming and
+          accessible destinations. From the historic forts along its Atlantic coastline to the
+          rainforest canopy of the Central Region and the wide savannahs of the north, Ghana packs
+          an extraordinary range of landscapes and history into a country roughly the size of the
+          United Kingdom.
+        </p>
+        <p>
+          This guide is built for first-time visitors &mdash; whether you're a tourist planning your
+          first trip, a member of the diaspora reconnecting with the country, or a student or
+          missionary about to be assigned here. Explore the destinations and dishes that make Ghana
+          worth visiting, save your favorites, and reach out when you're ready to plan the details.
+        </p>
+        <p><a class="btn" href="explore.html">Start Exploring</a></p>
+      </div>
+      <figure class="hero">
+        <img src="images/black-star-square.webp" alt="Independence Arch at Black Star Square in Accra, Ghana, flanked by Ghanaian flags against a clear blue sky" width="500" height="312" loading="eager">
+      </figure>
+    </div>
+
+    <section id="why-visit">
+      <h2>Why Visit Ghana</h2>
+      <p>
+        Ghana was the first sub-Saharan African country to gain independence from colonial rule, in
+        1957, and that history of leadership runs through the country's culture today. Visitors come
+        for the beaches of the Atlantic coast, the sobering history preserved at coastal forts like
+        Cape Coast and Elmina, the walk above the rainforest canopy at Kakum National Park, and the
+        chance to see elephants up close at Mole National Park in the north. English is Ghana's
+        official language, the currency is the Ghanaian Cedi, and the country is widely regarded as
+        one of the safest and most politically stable in the region &mdash; making it an approachable
+        first stop in West Africa.
+      </p>
+    </section>
+
+    <section id="featured">
+      <h2>A Taste of What's Ahead</h2>
+      <p>Three highlights from the full guide &mdash; see everything, filter by category, and save your favorites on the Explore Ghana page.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <img src="images/cape-coast-castle.webp" alt="A stone coastal fortress overlooking the sea" loading="lazy" width="500" height="333">
+          <div class="card-body">
+            <span class="card-tag">Destination</span>
+            <h3>Cape Coast Castle</h3>
+            <p>A UNESCO World Heritage site and one of Ghana's most visited &mdash; and most sobering &mdash; historic landmarks on the Atlantic coast.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/jollof-rice.webp" alt="A plate of Ghanaian jollof rice" loading="lazy" width="500" height="750">
+          <div class="card-body">
+            <span class="card-tag">Cuisine</span>
+            <h3>Jollof Rice</h3>
+            <p>A smoky, tomato-based rice dish and the centerpiece of celebrations across West Africa.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/kwame-nkrumah-mausoleum.webp" alt="Kwame Nkrumah Mausoleum and Memorial Park in Accra" loading="lazy" width="500" height="667">
+          <div class="card-body">
+            <span class="card-tag">Destination</span>
+            <h3>Kwame Nkrumah Mausoleum</h3>
+            <p>The resting place and memorial park of Ghana's first president, in the heart of Accra.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Ghana – Plan Your Visit</title>
+  <meta name="description" content="Send a trip-planning inquiry for your visit to Ghana: preferred dates, region of interest, and what you'd like to see.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+  <script src="scripts/nav.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="site-title">Discover Ghana</p>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore Ghana</a></li>
+        <li><a href="plan-visit.html" aria-current="page">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Plan Your Visit</h1>
+      <p>
+        Ready to start planning? Share a few details below and we'll follow up with tailored
+        suggestions for your trip &mdash; from the best time to visit a region to what to pair with
+        the destinations and dishes you've saved on the Explore Ghana page.
+      </p>
+    </div>
+
+    <form action="confirmation.html" method="get">
+
+      <p class="required-note"><span class="required" aria-hidden="true">*</span> indicates a required field</p>
+
+      <div class="field">
+        <label for="fullname">Full Name <span class="required" aria-hidden="true">*</span></label>
+        <input type="text" id="fullname" name="fullname" required>
+      </div>
+
+      <div class="field">
+        <label for="email">Email Address <span class="required" aria-hidden="true">*</span></label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="field">
+        <label for="region">Region of Interest <span class="required" aria-hidden="true">*</span></label>
+        <select id="region" name="region" required>
+          <option value="" disabled selected>Select a Region ...</option>
+          <option value="Greater Accra">Greater Accra</option>
+          <option value="Central Region (Cape Coast & Kakum)">Central Region (Cape Coast &amp; Kakum)</option>
+          <option value="Volta Region">Volta Region</option>
+          <option value="Savannah Region (Mole National Park)">Savannah Region (Mole National Park)</option>
+          <option value="Not sure yet">Not sure yet &mdash; open to suggestions</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="travelers">Number of Travelers <span class="required" aria-hidden="true">*</span></label>
+        <input type="number" id="travelers" name="travelers" min="1" max="20" value="1" required>
+      </div>
+
+      <div class="field">
+        <label for="travelDate">Preferred Travel Date <span class="required" aria-hidden="true">*</span></label>
+        <input type="date" id="travelDate" name="travelDate" required>
+      </div>
+
+      <fieldset class="field">
+        <legend>Trip Duration <span class="required" aria-hidden="true">*</span></legend>
+
+        <div class="radio-row">
+          <input type="radio" id="durationShort" name="duration" value="Less than a week" required>
+          <label for="durationShort">Less than a week</label>
+        </div>
+        <div class="radio-row">
+          <input type="radio" id="durationMedium" name="duration" value="1-2 weeks" required>
+          <label for="durationMedium">1&ndash;2 weeks</label>
+        </div>
+        <div class="radio-row">
+          <input type="radio" id="durationLong" name="duration" value="More than 2 weeks" required>
+          <label for="durationLong">More than 2 weeks</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend>Interests <em>(Check all that apply)</em></legend>
+
+        <div class="checkbox-row">
+          <input type="checkbox" id="interestHistory" name="interests" value="Historical sites">
+          <label for="interestHistory">Historical Sites</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="interestWildlife" name="interests" value="Wildlife and nature">
+          <label for="interestWildlife">Wildlife &amp; Nature</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="interestFood" name="interests" value="Food and culture">
+          <label for="interestFood">Food &amp; Culture</label>
+        </div>
+        <div class="checkbox-row">
+          <input type="checkbox" id="interestBeaches" name="interests" value="Beaches">
+          <label for="interestBeaches">Beaches</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="message">Additional Message <span class="optional">(Optional)</span></label>
+        <textarea id="message" name="message" rows="5"></textarea>
+      </div>
+
+      <div class="field submit-field">
+        <input type="submit" value="Send Inquiry">
+      </div>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+</html>

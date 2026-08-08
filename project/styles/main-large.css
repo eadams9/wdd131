@@ -44,9 +44,3 @@
     padding: 0 1.5rem 3rem;
   }
 }
-
-@media screen and (min-width: 500px) {
-  .card-grid.two-up {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}

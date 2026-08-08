@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Ghana – Inquiry Received</title>
+  <meta name="description" content="Confirmation page shown after submitting a trip-planning inquiry for a visit to Ghana.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/confirmation.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="site-title">Discover Ghana</p>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore Ghana</a></li>
+        <li><a href="plan-visit.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Thanks for Reaching Out!</h1>
+    </div>
+
+    <div class="confirmation">
+      <p>Your trip inquiry has been received. Here's what was submitted:</p>
+
+      <ul id="summary-list"></ul>
+
+      <p id="inquiry-count"></p>
+
+      <p><a class="btn" href="explore.html">Keep Exploring</a></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+</html>

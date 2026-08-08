@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Ghana – Explore</title>
+  <meta name="description" content="Explore Ghana's top destinations and traditional dishes, filter by category, and save your favorites to plan your trip.">
+  <meta name="author" content="Emmanuel Adams">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main-large.css">
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/explore.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <p class="site-title">Discover Ghana</p>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html" aria-current="page">Explore Ghana</a></li>
+        <li><a href="plan-visit.html">Plan Your Visit</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="intro">
+      <h1>Explore Ghana</h1>
+      <p>
+        Browse Ghana's top destinations and traditional dishes below. Filter by category, and click
+        "Save to My Trip" on anything that catches your eye &mdash; your picks are saved on this
+        device so you can find them again next time you visit.
+      </p>
+    </div>
+
+    <section id="explore-section">
+      <div class="filters" role="group" aria-label="Filter by category">
+        <button type="button" data-filter="all" class="active">All</button>
+        <button type="button" data-filter="destination">Destinations</button>
+        <button type="button" data-filter="cuisine">Cuisine</button>
+      </div>
+
+      <p class="wishlist-summary" id="wishlist-summary"></p>
+
+      <div class="card-grid" id="explore-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Emmanuel Adams, Ghana</p>
+    <p id="lastModified"></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+</body>
+</html>

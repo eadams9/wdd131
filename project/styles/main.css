@@ -200,6 +200,12 @@ section > h2 {
   border-radius: 999px;
 }
 
+.card-region {
+  color: var(--color-primary-dark);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
 .card-body p {
   margin: 0;
   font-size: 0.95rem;
